@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Map</title>
+</head>
+<body>
+    <h1>Flight Network</h1>
+    <ul>
+    {% for flight in flights %}
+        <li>{{ flight.flight_number }}: {{ flight.origin.code }} → {{ flight.destination.code }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
